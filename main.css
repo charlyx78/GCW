@@ -65,6 +65,12 @@ a {
 .contenedor-puntuaciones {
     background-image: url(imagenes/puntuaciones-background.png);
 }
+.contenedor-pausa {
+    background-image: url(imagenes/pausa-background.png);
+}
+.contenedor-config {
+    background-image: url(imagenes/BACKGROUND-IMG.png);
+}
 
 .contenedor-logo {
     display: flex;
@@ -74,6 +80,24 @@ a {
 .logo {
     width: 250px;
 }
+.contenedor-logoPausa {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+    padding-top: 6em;
+}
+.logoPausa {
+    width: 500px;
+}
+.contenedor-logoConfig {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+    padding-top: 3em;
+}
+.logoConfig {
+    width: 1000px;
+}
 .contenedor-titulo {
     display: flex;
     justify-content: center;
@@ -81,6 +105,19 @@ a {
 .titulo {
     width: 500px;
     margin-top: 1em;
+}
+
+.contenedor-contenedores-config{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+.contenedor-botones-config{
+    width: 50%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .contenedor-botones {
@@ -112,4 +149,121 @@ cursor: auto;
     width: 50%;
     margin: 0 auto;
     gap: 2em;
+}
+
+.contenedor-cuadros-objetivos{
+    display: flex;
+    padding-top: 4%;
+    padding-left: 7%;
+}
+.cuadro-objetivo{
+    width: 170px;
+    height: 170px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: black;
+    margin: 5px;
+}
+
+.contenedor-habilidad{
+    display: flex;
+    width: 84%;
+    margin-top: 18.5%;
+    margin-left: 6.7%;
+    position: relative;
+
+    .cuadro-objetivo{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 11%;
+        bottom: 6%;
+
+        .letra{
+            position: absolute;
+            font-family: 'Titan One', cursive;
+            font-size: 70px;
+            left: 28%;
+            bottom: -60%;
+        }
+    }
+
+    .tiempo{
+        position: absolute;
+        left: 85%;
+        bottom: -20%;
+
+        .letra{
+            position: absolute;
+            font-family: 'Titan One', cursive;
+            font-size: 70px;
+            left: 28%;
+            bottom: -60%;
+        }
+    }
+}
+.circulo-habilidad{
+    position: relative;
+}
+
+.slider-cont{
+    padding: 25px;
+    border-radius: 5px 30px 30px 5px;
+    display: flex;
+    align-items: center;
+}
+.slider{
+    position: relative;
+    width: 200px;
+    height: 20px;
+}
+
+.slider input {
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 212px;
+    height: 20px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    z-index: 99;
+}
+
+.slider input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid #e91e63;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider progress {
+    width: 200px;
+    height: 20px;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slider progress::-webkit-progress-bar {
+    background-color: #f0f0f0;
+}
+.slider progress::-webkit-progress-value{
+    background-color: #e91e63;
+}
+.sliderValueMusica{
+    width: 28px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+.sliderValueVFX{
+    width: 28px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: center;
 }
